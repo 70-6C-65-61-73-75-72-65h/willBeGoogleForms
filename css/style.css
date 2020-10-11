@@ -88,6 +88,7 @@ h6 {
 
 body {
   background-image: url("https://image.freepik.com/free-vector/abstract-black-and-white-grunge-surface-texture-background_54178-819.jpg");
+  overflow-x: hidden;
 }
 
 .bg-cover {
@@ -125,7 +126,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-x: hidden;
 }
 
 .container {
