@@ -1,0 +1,23 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/70-6C-65-61-73-75-72-65h/willBeGoogleForms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/70-6C-65-61-73-75-72-65h/willBeGoogleForms/issues"
+  },
+  "homepage": "https://github.com/70-6C-65-61-73-75-72-65h/willBeGoogleForms#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
