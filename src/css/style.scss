@@ -4,6 +4,7 @@ body {
   // background-color: #d3f1c5;
   // background-color: #93f765;
   background-image: url("https://image.freepik.com/free-vector/abstract-black-and-white-grunge-surface-texture-background_54178-819.jpg");
+  overflow-x: hidden;
 }
 
 // if media screen width less than 767
@@ -46,7 +47,6 @@ body {
   flex-direction: column;
   // align-items: center;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 .container {
