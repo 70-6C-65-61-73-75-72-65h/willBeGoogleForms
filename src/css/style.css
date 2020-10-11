@@ -125,6 +125,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: hidden;
 }
 
 .container {
@@ -176,10 +177,6 @@ body {
   .container {
     max-width: none;
   }
-}
-
-::-webkit-scrollbar-thumb {
-  color: transparent;
 }
 
 .hamburger-shell {
