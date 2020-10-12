@@ -23,7 +23,7 @@ body {
   pointer-events: none;
 }
 .reveal {
-  opacity: 0.9;
+  opacity: 0.85;
   display: block;
   pointer-events: auto;
   visibility: visible;
@@ -55,6 +55,10 @@ body {
   padding: 0 15px;
 }
 .header {
+  z-index: 1;
+  top: 0;
+  position: sticky;
+
   width: 100%;
   height: 100px;
   background-image: url(https://www.churchtimes.co.uk/media/5630572/diary.jpg?center=0.25294117647058822,0.547244094488189&mode=crop&width=605&height=292&rnd=132427621190000000);
@@ -103,6 +107,7 @@ body {
 // }
 
 .hamburger-shell {
+  pointer-events: auto;
   margin: 0;
   position: fixed;
   overflow: hidden;
@@ -132,7 +137,7 @@ body {
   transform: rotate(225deg);
   -webkit-transform: rotate(225deg);
   top: 30px;
-  background-color: red;
+  background-color: rgb(0, 26, 255);
   height: 2px;
 }
 
@@ -140,7 +145,7 @@ body {
   transform: rotate(-225deg);
   -webkit-transform: rotate(-225deg);
   top: 30px;
-  background-color: red;
+  background-color: rgb(0, 26, 255);
   height: 2px;
 }
 
@@ -235,7 +240,8 @@ body {
 // on toggle on (the same elem as .menu-name)
 .bump {
   top: 64px;
-  color: red;
+  color: rgb(213, 42, 12);
+  text-shadow: 1px 4px 4px rgb(30, 14, 122);
 }
 
 // in main in container

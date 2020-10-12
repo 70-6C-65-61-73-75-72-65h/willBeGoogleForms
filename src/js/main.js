@@ -37,6 +37,8 @@
 // 	})
 // });
 
+import { disableScroll, enableScroll } from "./preventScroll.js";
+
 // if media screen width less than 767
 function toogleClass(elem, cls) {
   return elem.classList.contains(cls)
@@ -61,11 +63,36 @@ const classesToToogleArray = [
   [".menu-name", "bump"],
   [".bg-cover", "reveal"],
 ];
-function toogleHumb(e) {
+const toogleHumb = () => {
   console.log("click humb");
-  console.log(e);
   toogleElemsClass(classesToToogleArray);
-}
-document.querySelector(".bg-cover").onclick = toogleHumb;
+  // console.log(document.querySelector(".menu-reveal"));
+  document.querySelector(".menu-reveal") ? disableScroll() : enableScroll();
+};
+let cover = document.querySelector(".bg-cover");
+cover.onclick = toogleHumb;
 
+let hum = document.querySelectorAll(".hamburger-shell");
+console.log(hum);
+[].map.call(hum, (humb) => (humb.onclick = toogleHumb));
+
+// let hum2 = document.querySelector(".container");
+// hum2.addEventListener("click", (e) => {
+//   console.log(e.target.classList.value);
+//   if (~e.target.classList.value.indexOf("hamburger-shell")) {
+//     toogleHumb();
+//   }
+// });
+
+// document.querySelector(".bump").onclick = toogleHumb;
+
+// document.querySelector(".hamburger-shell").ondblclick = toogleHumb;
+// function onreadyfunc() {
+//   document.querySelector(".hamburger-shell").onclick = toogleHumb;
+//   // .addEventListener("click", toogleHumb);
+//   // document
+//   //   .querySelector(".hamburger-shell")
+//   //   .addEventListener("ondblclick", toogleHumb);
+// }
+// document.addEventListener("DOMContentLoaded", onreadyfunc);
 // if media screen width more then 767
