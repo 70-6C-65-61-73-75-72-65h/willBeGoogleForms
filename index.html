@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=false, maximum-scale=1, minimum-scale=1">
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, maximum-scale=1, minimum-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <div class="bg-cover" class="none"></div>
 
     <!-- <div class="prompt">Click -></div> -->
 
     <!-- if width less then 767px -->
 
-
+    <div class="bg-cover" class="none"></div>
     <div class="wrapper">
         <div class="header">
             <div class="container">
-                <a class="hamburger-shell" onclick="toogleHumb()">
+                <a class="hamburger-shell">
+                    <!--  onclick="toogleHumb()" -->
                     <div class="hamb first_ham_line"></div>
                     <div class="hamb sec_ham_line"></div>
                     <div class="menu-name">MENU</div>
@@ -297,6 +297,6 @@
 
 </body>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" type="module"></script>
 
 </html>
