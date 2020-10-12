@@ -1,0 +1,28 @@
+@import "../../src/css/mainPageModules.scss";
+
+// its just for try how sticky works
+// sticky try
+.among-us {
+  // .among-us__impostor
+  background-color: rgb(36, 2, 49);
+  font-size: 600;
+  margin-bottom: 800px;
+
+  & > * {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  &__impostor {
+    top: 100px;
+    position: sticky;
+    color: red;
+    background-color: black;
+  }
+
+  // .among-us__crewmate
+
+  &__crewmate {
+    color: rgb(16, 107, 16);
+  }
+}
